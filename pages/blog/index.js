@@ -46,6 +46,7 @@ export default function BlogHome({ allPosts=[] }) {
         query:`query NewQuery {
             posts {
               nodes {
+                slug
                 content
                 title
               }
